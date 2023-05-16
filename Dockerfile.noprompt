@@ -1,0 +1,12 @@
+FROM ego-pos-prompt
+
+# sudo ln -s /usr/lib/wsl/lib/libcuda.so.1 /usr/local/cuda/lib64/libcuda.so
+RUN apt-get install -y \
+    libgles2-mesa-dev \
+    libomp-dev \
+    python-opengl \ 
+    libeigen3-dev \
+    cmake \
+    git \
+    libopencv-dev \
+    python3-opencv 

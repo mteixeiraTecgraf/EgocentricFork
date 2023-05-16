@@ -37,7 +37,7 @@ sudo apt install libomp-dev
 sudo apt-get install python-opengl
 sudo apt-get install libeigen3-dev
 ```
-
+s
 ### Conda Environments
 Create a conda environment by running the following code.
 ```

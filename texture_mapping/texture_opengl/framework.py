@@ -82,6 +82,7 @@ class OpenglRendererBase():
             self.frameBufferTextureObject = glGenTextures(1)
         glActiveTexture(GL_TEXTURE0)
         glBindTexture(GL_TEXTURE_2D, self.frameBufferTextureObject)
+        print("============================================= SELF ===", self.W, self.H)
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB32F, self.W, self.H, 0, GL_RGB, GL_FLOAT, None)
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR)
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR)
